@@ -1,0 +1,19 @@
+#bg {
+	position: fixed;
+	left: 0; top: 0; width: 100vw; height: 100vh;
+	background: url("images/mountains.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.column {
+	padding: 50px;
+	background-color: white;
+	border: 2px solid black;
+	outline: 10px solid white;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+.content {
+	display: none;
+	overflow: hidden;
+}

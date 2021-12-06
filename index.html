@@ -7,33 +7,27 @@
 		<meta name="author" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet"> 
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/skeleton.css">
+		<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+		<link rel="stylesheet" href="css/skeleton.css" type="text/css" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
 		<link rel="icon" type="image/png" href="images/favicon.png">
 	</head>
 
 	<body>
 		<div id="bg"></div>
 		<div class="container">
-			<!--<div class="row">
-				<div class="one-half column" style="margin-top: 25%">
-					<h4>WEIGHTLIFTING</h4><br>
-					<button type="button" class="collapsible">UrPwrLifter's Bench Press [MWF]</button>
-					<div class="content">
-					<p>33% x 10 (half-rep)<br>56% x 10 (half-rep)<br>79% x 5<br>86% x 3<br>91% x 1<br>96% x 1 (can skip)<br>91% x 1<br>91% x 1<br>86% x 3<br>79% x 5<br>79% x 3 (do if skipped)</p>
-					<p>Overhead Tricep Rope Extension - 3 sets x 12-15 reps<br>Bodyweight Pull-Up - 3 sets x 12-15 reps</p>
-					</div>
-				</div>
-				<div class="one-half column" style="margin-top: 25%">
-					<h4>CALISTHENICS</h4>
-					<button type="button" class="collapsible">Convict Conditioning 1/2</button>
-					<div class="content"></div>
-				</div>
-			</div>-->
 			<div class="row">
 				<div class="two column" style="margin-top: 10%; margin-bottom: 10%;">
+				<p>This is a summary of the Convict Conditioning book series so credit to Coach Wade.
+				Spend a week on each starting progression per exercise then move onto the harder ones progressively.
+				Yes, even if they're "too easy" already.
+				Building muscle memory with the earlier progressions bulletproofs your form and prevents injury.<br>
+				<b>TODO:</b> add form/note per exercise, mobile compatibility, form pictures, add 3rd-5th book content and missing 1st/2nd book exercises<br><br></p>
 					<center>
 						<h4>Squats [MTWHF]</h4>
+						<p><b>NOTE:</b> These are by far the most important exercise since legs are the powerhouse of the human body.
+						Your kicks should be several times stronger than a punch and legs are vital to a strong punch too since they are the base/leverage of the kinetic chain.
+						Building leg strength also improves your sprint so they are extremely practical.</p>
 						<table>
 							<tr>
 								<td>Shoulderstand</td><td>Jackknife</td><td>Supported</td><td>Half</td><td>Full</td>
@@ -46,6 +40,9 @@
 						</table>
 
 						<h4>Leg Raise [MTWHF]</h4>
+						<p><b>NOTE:</b> Situps were invented by roided bodybuilders who didn't want to build a bloated core from a proper ab exercise.
+						Since you are probably natural, this won't happen so doing that excuse of an exercise is pointless.
+						Leg raises use the weight of your legs which is heavier than your upper half and it sounds counterintuitive from the name but this is the best ab exercise, whether you have access to cable machines/weights or not.</p>
 						<table>
 							<tr>
 								<td>Knee Tucks</td><td>Flat Knee</td><td>Flat Bent</td><td>Flat Frog</td><td>Flat Straight</td>
@@ -58,6 +55,8 @@
 						</table>
 
 						<h4>Pushups [MWF]</h4>
+						<p><b>NOTE:</b> These are a classic exercise and rightfully so. They are mechanically superior to a bench press for your shoulders so try benching once you've made good progress with pushups first.<br>
+						<b>FORM:</b> Do not place your hands too far apart to make it easier; that will destroy your shoulders. Make sure to pull your scapula together and keep a tight back. Lastly, shift your body weight forward a little like you're leaning forward to make the movement shape an arch instead of a diagonal line and lightly pull your hands together while they're planted on the floor.</p>
 						<table>
 							<tr>
 								<td>Wall</td><td>Incline</td><td>Kneeling</td><td>Half</td><td>Full</td>
@@ -70,6 +69,7 @@
 						</table>
 
 						<h4>Pullup [MWF]</h4>
+						<p><b>NOTE:</b> <br>
 						<table>
 							<tr>
 								<td>Vertical Pull</td><td>Horizontal Pull</td><td>Jackknife Pull</td><td>Half</td>
@@ -107,6 +107,7 @@
 						</table>
 
 						<h4>Bridge [MWF]</h4>
+						<p><b>NOTE:</b> Do not skip this exercise. This exercise builds the muscles around your spine which helps protect you from becoming paralyzed from a car crash or similar injuries. These are SETSxREPS as usual, not held for N seconds.</p>
 						<table>
 							<tr>
 								<td>Short</td><td>Straight</td><td>Angled</td><td>Head</td><td>Half</td><td>Full</td>
@@ -121,44 +122,6 @@
 				</div>
 			</div>
 		</div>
+		<script src="script.js"></script>
 	</body>
 </html>
-
-<style>
-	#bg {
-		position: fixed;
-		left: 0; top: 0; width: 100vw; height: 100vh;
-		background: url("images/mountains.png");
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-  		background-size: cover;
-	}
-	.column {
-		padding: 50px;
-		background-color: white;
-		border: 2px solid black;
-		outline: 10px solid white;
-		font-family: 'PT Sans Narrow', sans-serif;
-	}
-	.content {
-		display: none;
-		overflow: hidden;
-	}
-</style>
-
-<script>
-	var coll = document.getElementsByClassName("collapsible");
-	var i;
-
-	for (i = 0; i < coll.length; i++) {
-		coll[i].addEventListener("click", function() {
-			this.classList.toggle("active");
-			var content = this.nextElementSibling;
-			if (content.style.display === "block") {
-				content.style.display = "none";
-			} else {
-				content.style.display = "block";
-			}
-		});
-	} 
-</script>
