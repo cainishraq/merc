@@ -17,3 +17,8 @@
 	display: none;
 	overflow: hidden;
 }
+
+.tablediv {
+	overflow-x: auto;
+	width: 100%;
+}
