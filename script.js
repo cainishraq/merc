@@ -1,13 +1,22 @@
-var coll = document.getElementsByClassName("collapsible");
-var i;
-for (i = 0; i < coll.length; i++) {
-	coll[i].addEventListener("click", function() {
-		this.classList.toggle("active");
-		var content = this.nextElementSibling;
-		if (content.style.display === "block") {
-			content.style.display = "none";
-		} else {
-			content.style.display = "block";
-		}
-	});
-} 
+document.addEventListener('click', function(e) {
+    e = e || window.event;
+    var target = e.target || e.srcElement;
+	if (target.nodeName == "TD") {
+		var exercise = target.parentNode.parentNode.parentNode.getAttribute("name").toLowerCase(),
+			index = target.cellIndex+1;
+		modal_open(exercise+index+".png");
+	}
+}, false);
+
+var modal = document.getElementById("modal");
+var modalImg = document.getElementById("modal-img");
+var captionText = document.getElementById("caption");
+var modal_open = function(fl){
+	modal.style.display = "block";
+	modalImg.src = "images/"+fl;
+}
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+	modal.style.display = "none";
+}

@@ -9,7 +9,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="css/normalize.css" type="text/css" />
 		<link rel="stylesheet" href="css/skeleton.css" type="text/css" />
-		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="stylesheet" href="css/modal.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
 		<link rel="icon" type="image/png" href="images/favicon.png">
 	</head>
 
@@ -28,7 +29,7 @@
 						<p><b>NOTE:</b> These are by far the most important exercise since legs are the powerhouse of the human body.
 						Your kicks should be several times stronger than a punch and legs are vital to a strong punch too since they are the base/leverage of the kinetic chain.
 						Building leg strength also improves your sprint so they are extremely practical.</p>
-						<div class="tablediv"><table>
+						<div class="tablediv"><table name="SQUAT">
 							<tr>
 								<td>Shoulderstand</td><td>Jackknife</td><td>Supported</td><td>Half</td><td>Full</td>
 								<td>Close</td><td>Uneven</td><td>1/2 One Leg</td><td>Assisted One Leg</td><td>One Leg</td>
@@ -43,7 +44,7 @@
 						<p><b>NOTE:</b> Situps were invented by roided bodybuilders who didn't want to build a bloated core from a proper ab exercise.
 						Since you are probably natural, this won't happen so doing that excuse of an exercise is pointless.
 						Leg raises use the weight of your legs which is heavier than your upper half and it sounds counterintuitive from the name but this is the best ab exercise, whether you have access to cable machines/weights or not.</p>
-						<div class="tablediv"><table>
+						<div class="tablediv"><table name="LEGRAISE">
 							<tr>
 								<td>Knee Tucks</td><td>Flat Knee</td><td>Flat Bent</td><td>Flat Frog</td><td>Flat Straight</td>
 								<td>Hanging Knee</td><td>Hanging Bent</td><td>Hanging Frog</td><td>Hanging Partial Straight</td><td>Hanging Straight</td>
@@ -57,7 +58,7 @@
 						<h4>Pushups [MWF]</h4>
 						<p><b>NOTE:</b> These are a classic exercise and rightfully so. They are mechanically superior to a bench press for your shoulders so try benching once you've made good progress with pushups first.<br>
 						<b>FORM:</b> Do not place your hands too far apart to make it easier; that will destroy your shoulders. Make sure to pull your scapula together and keep a tight back. Lastly, shift your body weight forward a little like you're leaning forward to make the movement shape an arch instead of a diagonal line and lightly pull your hands together while they're planted on the floor.</p>
-						<div class="tablediv"><table>
+						<div class="tablediv"><table name="PUSHUP">
 							<tr>
 								<td>Wall</td><td>Incline</td><td>Kneeling</td><td>Half</td><td>Full</td>
 								<td>Close</td><td>Uneven</td><td>1/2 One Arm</td><td>Lever</td><td>One Arm</td>
@@ -70,7 +71,7 @@
 
 						<h4>Pullup [MWF]</h4>
 						<p><b>NOTE:</b> <br>
-						<div class="tablediv"><table>
+						<div class="tablediv"><table name="PULLUP">
 							<tr>
 								<td>Vertical Pull</td><td>Horizontal Pull</td><td>Jackknife Pull</td><td>Half</td>
 								<td>Full</td><td>Close</td><td>Uneven</td><td>1/2 One Arm</td><td>Assisted One Arm</td><td>One Arm</td>
@@ -83,7 +84,7 @@
 
 
 						<h4>Fingertip Pushup [TH]</h4>
-						<div class="tablediv"><table>
+						<div class="tablediv"><table name="FINGERTIPPUSHUP">
 							<tr>
 								<td>Wall</td><td>Incline</td><td>Kneeling</td><td>Half</td><td>Full</td>
 								<td>Close</td><td>Uneven</td><td>1/2 One Arm</td><td>Lever</td><td>One Arm</td>
@@ -95,7 +96,7 @@
 						</table></div>
 
 						<h4>Hang [MTWHF]</h4>
-						<div class="tablediv"><table>
+						<div class="tablediv"><table name="HANG">
 							<tr>
 								<td>Horizontal</td><td>Bar</td><td>Uneven</td><td>One-Arm Bar</td>
 								<td>Towel</td><td>Twin Towel</td><td>Uneven Towel</td><td>One-Arm Towel</td>
@@ -108,7 +109,7 @@
 
 						<h4>Bridge [MWF]</h4>
 						<p><b>NOTE:</b> Do not skip this exercise. This exercise builds the muscles around your spine which helps protect you from becoming paralyzed from a car crash or similar injuries. These are SETSxREPS as usual, not held for N seconds.</p>
-						<div class="tablediv"><table>
+						<div class="tablediv"><table name="BRIDGE">
 							<tr>
 								<td>Short</td><td>Straight</td><td>Angled</td><td>Head</td><td>Half</td><td>Full</td>
 								<td>Wall Walking Down</td><td>Wall Walking Up</td><td>Closing</td><td>Stand-to-Stand</td>
@@ -121,6 +122,11 @@
 					</center>
 				</div>
 			</div>
+		</div>
+		<div id="modal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="modal-img">
+			<div id="caption"></div>
 		</div>
 		<script src="script.js"></script>
 	</body>
