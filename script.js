@@ -5,6 +5,8 @@ document.addEventListener('click', function(e) {
 		var exercise = target.parentNode.parentNode.parentNode.getAttribute("name").toLowerCase(),
 			index = target.cellIndex+1;
 		modal_open(exercise+index+".png");
+	} else if (target.nodeName == "A") {
+		modal_open("fingertip"+".png");
 	}
 }, false);
 
