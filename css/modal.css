@@ -54,21 +54,34 @@
 }
 
 /* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
+.mbutton {
+  position: fixed;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
+  cursor: pointer;
+  user-select: none;
 }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
+.mbutton:hover, .mbutton:focus {
+  color: #bbbbbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+#close-button {
+  top: 15px;
+  right: 35px;
+  padding: 32px;
+}
+
+#right-arrow {right: 0px}
+.arrow {
+  padding: 40vh 10vw;
+  opacity: 40%;
+  text-shadow: 0 0 10px black;
+  z-index: 1000
 }
 
 /* 100% Image Width on Smaller Screens */
@@ -76,4 +89,4 @@
   .modal-content {
     width: 100%;
   }
-} 
+}
